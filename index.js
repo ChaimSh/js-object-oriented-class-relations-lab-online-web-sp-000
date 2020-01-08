@@ -28,12 +28,12 @@ class Trip {
     // this.driver = driver
     store.trips.push(this)
 
-    driver() {
-      return store.driverrs.find(
-        function(driver) {
-          return driver.id === this.driverId;
-        }bind(this)
-      );
-    }
+    // driver() {
+    //   return store.driverrs.find(
+    //     function(driver) {
+    //       return driver.id === this.driverId;
+    //     }bind(this)
+    //   );
+    // }
   }
 }
