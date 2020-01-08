@@ -25,15 +25,14 @@ class Trip {
     this.id = ++tripId
     this.driverId = driver.id
     this.passengerId = passenger.id
-    // this.driver = driver
     store.trips.push(this)
 
-    // driver() {
-    //   return store.driverrs.find(
-    //     function(driver) {
-    //       return driver.id === this.driverId;
-    //     }bind(this)
-    //   );
-    // }
+    driver() {
+      return store.drivers.find(
+        function(driver) {
+          return driver.id === this.driverId;
+        }bind(this)
+      );
+    }
   }
 }
